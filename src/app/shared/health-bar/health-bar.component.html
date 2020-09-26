@@ -1,0 +1,7 @@
+<div class="health-bar">
+  <div class="health-bar__progress" [ngStyle]="{ width: width + '%' }">
+    {{ width }}
+  </div>
+</div>
+
+<button class="btn btn-warning" (click)="changeWidth()">Change Width</button>
