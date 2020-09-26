@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-health-bar',
@@ -6,15 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./health-bar.component.css'],
 })
 export class HealthBarComponent implements OnInit {
-  width = 40;
+  @Input() width: number;
 
   constructor() {}
 
   ngOnInit(): void {}
-
-  changeWidth = () => {
-    if (this.width <= 90) {
-      this.width += 10;
-    }
-  };
 }

@@ -1,0 +1,19 @@
+.logs-item {
+  list-style: none;
+  margin: 4px 0;
+}
+
+li > p {
+  margin-bottom: 0 !important;
+  padding: 8px;
+}
+
+.player {
+  color: blue;
+  background-color: #e4e8ff;
+}
+
+.monster {
+  color: red;
+  background-color: #ffc0c1;
+}

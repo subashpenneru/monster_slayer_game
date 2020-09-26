@@ -13,7 +13,8 @@
   <div class="row mt-3">
     <app-action-btns></app-action-btns>
   </div>
-  <div class="row mt-3">
-    <app-logs></app-logs>
-  </div>
+</div>
+
+<div class="container mt-3" *ngIf="gameServ.isGameRunning | async">
+  <app-logs></app-logs>
 </div>

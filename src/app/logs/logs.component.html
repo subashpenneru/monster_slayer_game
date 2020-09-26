@@ -1,5 +1,12 @@
 <div class="logs">
   <ul class="list-group">
-    <li class="list-group-item">Logs will display here</li>
+    <li class="list-group-item" *ngIf="gameServ.turns.length === 0">
+      Logs will display here
+    </li>
+    <li class="logs-item" *ngFor="let turn of gameServ.turns">
+      <p [ngClass]="{ player: turn.isPlayer, monster: !turn.isPlayer }">
+        {{ turn.text }}
+      </p>
+    </li>
   </ul>
 </div>
