@@ -1,0 +1,13 @@
+.health-bar {
+  height: 50px;
+  background-color: #ededed;
+  box-shadow: 0 2px 7px -2px rgba(0, 0, 0, 0.75);
+}
+
+.health-bar__progress {
+  height: 100%;
+  background-color: green;
+  transition: width 0.5s;
+  color: white;
+  text-align: center;
+}
